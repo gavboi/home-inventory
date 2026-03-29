@@ -1,0 +1,50 @@
+main {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  flex: 1;
+  align-content: center;
+}
+
+.cell-frequent {
+  flex: 1;
+  border-radius: 8px;
+  grid-column: auto;
+  color: var(--color-on-primary);
+}
+
+.cell-manage {
+  flex: 1;
+  border-radius: 8px;
+  grid-column: 1 / -1;
+  background-color: var(--color-secondary);
+  color: var(--color-on-primary);
+}
+
+.cell-frequent:hover, .cell-manage:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+.cell-text {
+  margin: 16px;
+}
+
+/* size adjustments for desktop (above is mobile) */
+@media (min-width: 1024px) {
+  .home {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cell-frequent {
+    grid-column: auto;
+  }
+
+  .cell-manage {
+    grid-column: auto;
+  }
+
+  .cell-text {
+    margin: 24px;
+  }
+}
