@@ -6,7 +6,13 @@ Web app for devices to manage, view, and categorize home consumables.
 
 
 ## TODO
-This is a work in progress. 
+This is a work in progress.
+
+### Next
+- automate camera request/open
+- clean style for scanner
+- clean pocketbase types
+- clean inventory
 
 ### v0
 - scanner add and remove

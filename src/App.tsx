@@ -1,6 +1,7 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/home'
+import Inventory from './pages/inventory'
 import Scanner from './pages/scanner'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/scanner" element={<Scanner />} />
-      <Route path="/inventory" element={<></>} />
+      <Route path="/inventory" element={<Inventory />} />
       <Route path="/recipes" element={<></>} />
     </Routes>
   )
